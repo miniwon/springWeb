@@ -1,0 +1,12 @@
+package myclass.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HelloController {
+	@RequestMapping("start.do")
+	public void test() {
+		System.out.println("미니언즈 피규어를 살까 말까");
+	}
+}

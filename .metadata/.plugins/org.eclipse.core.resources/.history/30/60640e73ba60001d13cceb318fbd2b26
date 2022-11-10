@@ -1,0 +1,19 @@
+package myclass.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class RequestMappingController {
+
+	@RequestMapping(value={"re/a.do", "re/b.do"})
+	public void test() {
+		System.out.println("a.do와 b.do 요청");
+	}
+
+	/* @RequestMapping("re/b.do") public void test2() {
+	 * 
+	 * }
+	 */
+
+}

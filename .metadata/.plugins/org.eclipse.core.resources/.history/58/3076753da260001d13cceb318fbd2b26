@@ -1,0 +1,5 @@
+package myclass.controller;
+
+public class HelloController {
+
+}

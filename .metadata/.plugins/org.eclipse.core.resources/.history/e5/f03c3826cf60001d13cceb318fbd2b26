@@ -1,0 +1,27 @@
+package myclass.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import myclass.model.MemberVO;
+import myclass.model.MemberVOList;
+
+@Controller
+public class ListController {
+	
+	@RequestMapping("multiInsert.do")
+	public void test(MemberVOList memberVOList) {
+		for(MemberVO vo: memberVOList.getList()) {
+			System.out.println(vo.isState() + " > " + vo.getId() + " : " + vo.getName() + " - " + vo.getAge());
+		}
+	}
+	
+	@RequestMapping("param.do")
+	public String test2(MemberVO memberVO) {
+		// 파라미터가 id=kim&age=20일 때 스프링에서는 알아서 필드명에 맞춰 getter
+		System.out.println(memberVO.getId() + " : " + memberVO.getName() + " - " + memberVO.getAge());
+		return "param";
+	}	
+	
+
+}
