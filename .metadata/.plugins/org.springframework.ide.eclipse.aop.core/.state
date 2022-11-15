@@ -2,5 +2,12 @@
 <aop-reference-model>
 <aop-project name="fSpringMVC"/>
 <aop-project name="gWebBoard"/>
+<aop-project name="iTransaction">
+<aspect-definition advice-class-name="org.springframework.transaction.interceptor.TransactionInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="60" aspect-name="org.springframework.transaction.interceptor.TransactionInterceptor#iTransaction#src/main/webapp/WEB-INF/spring/root-context.xml#60" aspect-start-line-number="59" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/iTransaction/src/main/webapp/WEB-INF/spring/root-context.xml" pointcut-expression="(@within(org.springframework.transaction.annotation.Transactional) || @annotation(org.springframework.transaction.annotation.Transactional)) &amp;&amp; execution(* *..*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:iTransaction|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:10|8:serviceTxImpl:10" bean-file="/iTransaction/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/iTransaction/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=iTransaction/C:\/Users\/kosmo\/.m2\/repository\/org\/springframework\/spring-tx\/5.0.8.RELEASE\/spring-tx-5.0.8.RELEASE.jar=/maven.pomderived=/true=/=/org.eclipse.jst.component.dependency=/\/WEB-INF\/lib=/=/maven.pomderived=/true=/=/org.eclipse.jst.component.archivename=/spring-tx-5.0.8.RELEASE.jar=/=/maven.groupId=/org.springframework=/=/maven.artifactId=/spring-tx=/=/maven.version=/5.0.8.RELEASE=/=/maven.scope=/compile=/&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=iTransaction/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.javassem.service{ServiceTxImpl.java[ServiceTxImpl~addAll~QCustomerVO;~QMemberVO;" target-start-line="25"/>
+</aspect-definition>
+</aop-project>
 <aop-project name="hSample"/>
+<aop-project name="gWebBoard2"/>
+<aop-project name="gWebBoard1"/>
 </aop-reference-model>
